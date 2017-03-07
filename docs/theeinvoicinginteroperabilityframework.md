@@ -152,6 +152,22 @@ However, the digital capabilities registered for a business will change as their
 
 Because of these continually changing details it is necessary to dynamically discover the current digital addresses of recipients. THe finer details of the Business Discovery service are discussed later in the Technical Interoperability section.
 
+## 3.5 Semantic Interoperability
+### 3.5.1 How does semantic interoperability help eInvoicing
+
+Semantic interoperability is the ability for different business applications (in this case those of Buyers and Suppliers) to recognise and process the information they exchange.
+
+However businesses operate in different industry, geopolitical, and regulatory contexts that may necessitate different rules and requirements for the information exchanged in an invoice. Consequently, most trading communities and businesses use differing forms of invoices. Transforming the data to suit different contexts is usually required when two parties using different invoice models or formats (for example, between two different communities) need to trade. Such transformations may be a complex and expensive process prone to misinterpretations. As many Suppliers (and Buyers) trade with many different communities this complexity is common and yet another barrier to eInvoicing. 
+
+One proven approach to enabling greater interoperability is to agree upon a colleciton of terms with well-defined meanings that are consistent across alll contexts of use. This is called the semantic model of the core elements.
+
+A semantic model is based on the idea that common pieces of information used in an invoice may have many names, use different terminology and be expressed in different ways, but the meanings are constant and commonly understood. Semantic models help us identify what the common pieces of information mean without the distraction of how we express this. This is similar to how drawing pictures helps people who don't speak a common language to communicate.
+
+THe semantic model is an attempt to remove the language/syntax/grammar/format from information to enable us to compare one thing with another and see if htey are describing the same thing. In the software world this is useful because:
+ - Technology is constantly evolving and standardising and the semnatics ensures the invoice information that is standardised does not need redesigning to satisfy new tehcnologies- formats may change by semantics does not need to; and
+ - When transforming an invoice between various formats the mapping of information is easier for software developers if there is a common semantic model to reference. 
+ 
+### 3.5.2 The Core eInvoice Semantic Model
 
 
 
