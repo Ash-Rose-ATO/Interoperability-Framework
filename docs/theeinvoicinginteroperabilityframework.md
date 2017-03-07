@@ -115,6 +115,21 @@ The Buyer's Access Point transforms the Buyer's acknowledgement into a standardi
  
 The Supplier's Access Point transforms the response message into an acknowledgement format suitable for the supplier (if required) and forwards the acknowledgement to the Supplier. 
  
+Scenario Two: Recipient Created Tax Invoice (RCTI)
+
+With RCTIs a Tax Invoice is issued by the Party receiving the goods or services rather than the Supplier. For example, a sugar cane farmer and a mill, have entered into an agreement and the Buyer will invoice and provide payment for a delivery of cane based quality of the cane. On a delivery of cane to the mill, the Buyer creates a Recipient Created Tax Invoice.
+
+ 1. Buyer's business application to Access Point (CORNERS ONE to TWO)
+
+The Buyer's business application creates a Recipient Created Tax Invoice detailing the purchase(s) made by the Buyer. The Buyer sends the invoice to their Access Point.
+
+ 2. Buyer's Access Point to Supplier's Access Point (CORNERS TWO to THREE)
+ 
+The Buyer's Access Point transforms the Buyer's Invoice data to the standardised eInvoice data format (if they differ). The Buyer's Access Point then uses the Business Discovery service to discover the adddress of the Supplier's Access Point before forwarding the eInvoice to that Access Point.
+
+ 3. Access Point to Supplier's business application (CORNERS THREE to FOUR)
+ 
+The Supplier's Access Point transforms the eInvoice data format to the Supplier's required format (if they differ) and delivers this to the Supplier's business application (for example, their accounts receivable system).
  
 
 
