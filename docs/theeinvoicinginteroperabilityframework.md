@@ -187,8 +187,20 @@ The Core eInvoice Semantic Model in itself does not enable software developers t
 It may help to remember that the semantic model is for business people to understand while the digital data format is for software developers to understand and computer programs to process.
 
 ### The eInvoicing data format:
+ - Is based on an international standard;
+ - Is aligned with relevant and established international standards. Australian standards and practices will only be adopted where international standards are not applicable;
+ - Encompasses procure to pay documents;
+ - Will not inhibit the future extension to other elements of the procure to pay process;
+ - Has a published semantic model;
+ - Will not impose a particular design on internal solutions for stakeholders;
+ - Has an established user base;
+ - Has open participation and governance;
+ - Is open, royalty free and vendor agnostic;
+ - Allows development of tools that are easily available;
+ - Has interfaces with common business applications; and
+ - Enables business to business (B2B) connectivity irrespective of platform or solution to exchange electronic business transactions. 
 
-
+## 3.6 Technical Interoperability
 
 
 
