@@ -169,6 +169,25 @@ THe semantic model is an attempt to remove the language/syntax/grammar/format fr
  
 ### 3.5.2 The Core eInvoice Semantic Model
 
+The Core eInvoice Semantic Model consists of a dictionary of terms, concepts used, the minimal content of a document, the rules validating the content, the use of identifiers, and code lists. Adopting a single common semantic model promotes reliable information exchange and ensures technology neutrality. It is also easier and cheapter for enterprises to subscribe to a single model as comapred to several.
+
+### The Semantic Model:
+ - Inforporates invoice requirements for regulatory e.g. tax, commercial, technical, financial, and industry extentions;
+ - Will be aligned with the Austrlaian Reproting Dictionary (through incorporation);
+ - Exploits the ability to share the model and gain efficiencies of a standardised data model;
+ - Identifies the common case model;
+ - Consistent reuse of standardised definitions and meanings provides greater opportunities to optimise business processes and the ability to integrate information with further cost reduction;
+ - Makes use of a proven methodology; and
+ - The semantic model has been defined and elaborated in a consultative manner- reusing an existing international standard.
+ 
+### 3.5.3 Digital Data Format
+
+The Core eInvoice Semantic Model in itself does not enable software developers to create the necessary eInvoice data files to exchange. The semantic model needs to be expressed in a standardised digital format. The term data format is used to mean the software expression of the information described by the semantic model (also called the message syntax or markup language). In the data format all the data elements, concepts and validation rules defined in the semantic model are expressed in ways computer applications can process.
+
+It may help to remember that the semantic model is for business people to understand while the digital data format is for software developers to understand and computer programs to process.
+
+### The eInvoicing data format:
+
 
 
 
