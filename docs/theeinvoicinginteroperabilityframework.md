@@ -72,43 +72,48 @@ As part of the work to provide implementation guidance and ongoing governance of
  - There will be no charges for exchanging documents between Access Points; and
  - There will be an open market for providing Access Points.
  
- ## 3.4 Organisational Interoperability
- ### 3.4.1 Business Processes
+## 3.4 Organisational Interoperability
+### 3.4.1 Business Processes
  
- The procurement, accounts payable, accounts reveivable and sales processes of any buyers and suppliers are inextricably linked. Figure 2 shows that invoicing is one sub-process of this broader process.
+The procurement, accounts payable, accounts reveivable and sales processes of any buyers and suppliers are inextricably linked. Figure 2 shows that invoicing is one sub-process of this broader process.
  
- While there are significant benefits in digitising the whole end to end process, overseas evidence suggests it will be more effective and achieve borader market adoption by focusing on the invoice processes as the first step.
+While there are significant benefits in digitising the whole end to end process, overseas evidence suggests it will be more effective and achieve borader market adoption by focusing on the invoice processes as the first step.
  
- Eventually, as the ecosystem matures, the entire procure-to-pay process will be digitised (Penttinen, 2008).
+Eventually, as the ecosystem matures, the entire procure-to-pay process will be digitised (Penttinen, 2008).
  
- Figure 2- Abbreviated procure to pay process
+Figure 2- Abbreviated procure to pay process
  
- It is also recognised that procure to pay forms one part of an overall set of supply chain processes, such as financial supply chain (dealing with banking/payment) and the logistical supply chain (dealing with receipt/delivery of the purchased items). Information flows into and out of these processes and so suitable interfaces will also be required. 
+It is also recognised that procure to pay forms one part of an overall set of supply chain processes, such as financial supply chain (dealing with banking/payment) and the logistical supply chain (dealing with receipt/delivery of the purchased items). Information flows into and out of these processes and so suitable interfaces will also be required. 
  
- Business scenarios
+Business scenarios
  
- The business processes introduced in this document are industry neutral and depict a generic cross-industry set of scenarios.
+The business processes introduced in this document are industry neutral and depict a generic cross-industry set of scenarios.
  
- Scenario One: Invoicing (and Adjustment Invoices)
+Scenario One: Invoicing (and Adjustment Invoices)
  
  1. Supplier's business application to Supplier's Access Point (CORNERS ONE to TWO)
  
- The Supplier's business application (for example, an accounts receivable system) creates an invoice detailing purchase(s) made by the Buyer. The Supplier sends this invoice data to their Access Point.
+The Supplier's business application (for example, an accounts receivable system) creates an invoice detailing purchase(s) made by the Buyer. The Supplier sends this invoice data to their Access Point.
 
  2. Supplier's Access Point to Buyer's Access Point (CORNERS TWO to THREE)
  
- The Supplier's Access Point transforms the Supplier's invoice data to the standardised eInvoice data format (if it is not already in that format). The Supplier's Access Point then uses the Business Discovery service (defined later in this document) to determine the address of the Buyer's Access Point before forarding the eInvoice to that Access Point.
+The Supplier's Access Point transforms the Supplier's invoice data to the standardised eInvoice data format (if it is not already in that format). The Supplier's Access Point then uses the Business Discovery service (defined later in this document) to determine the address of the Buyer's Access Point before forarding the eInvoice to that Access Point.
  
  3. Buyer's Access Point to Buyer's business application (CORNERS THREE to FOUR)
  
- The Buyer's Access Point transforms the eInvoice data format to the Buyer's required format (if they differ) and delivers this to the Buyer's business application (for example, their accounts payable system).
+The Buyer's Access Point transforms the eInvoice data format to the Buyer's required format (if they differ) and delivers this to the Buyer's business application (for example, their accounts payable system).
  
  4. [Optional] Buyer's business applicaiton to Supplier's business application (CORNERS FOUR to ONE)
  The Buyer may acknowledge when the invoice has been received. In which case:
-  - The Buyer's business application verifies the invoice and sends some form of acknowledgement to their Access Point (CORNER THREE);
-  - Buyer's Access Point to Supplier's Access Point (CORNERS THREE to TWO)
  
- The Buyer's Access Point
+ - The Buyer's business application verifies the invoice and sends some form of acknowledgement to their Access Point (CORNER THREE);
+ - Buyer's Access Point to Supplier's Access Point (CORNERS THREE to TWO)
+ 
+The Buyer's Access Point transforms the Buyer's acknowledgement into a standardised response message (if they differ), uses the Business Discovery service to discover the locaiton of the Supplier's Access Point and forwards the response message; and
+
+ - Suppler's Access Point to Supplier's business application (CORNERS TWO to ONE)
+ 
+The Supplier's Access Point transforms the response message into an acknowledgement format suitable for the supplier (if required) and forwards the acknowledgement to the Supplier. 
  
  
 
